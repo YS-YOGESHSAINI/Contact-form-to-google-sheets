@@ -1,0 +1,105 @@
+<!--
+  //Developed by:- Yogesh Saini
+  //Subscribe on Youtube :- https://youtube.com/sharpys
+  //Tutorial uploaded on YouTube
+-->
+<html>
+    <head>
+        <title>Contact Form</title>
+        <style>
+            *
+            {
+                font-family: system-ui;
+            }
+            body
+            {
+                background: rgb(202, 236, 252);
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .container
+            {
+                background: #fff;
+                border: none;
+                border-radius: 50px;
+                box-shadow:10px 10px 50px grey;  
+            }
+            .box
+            {
+                margin: 20px;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                background: rgb(202, 236, 252);
+                width: 500px;
+                border: 5px rgb(2, 88, 128) dotted;
+                border-width: 2px;
+                border-radius: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .hea
+            {
+              position: absolute;
+              /* background: #000; */
+            }
+            form
+            {
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+            }
+            input
+            {
+                outline: none;
+                margin: 8px;
+                width: 350px;
+                height: 30px;
+                border: none;
+                border-radius: 50px;
+                padding-left: 15px;
+            }
+            input:nth-child(5)
+            {
+                width: 350px;
+                height: 60px ;
+            }
+            input:nth-child(7)
+            {
+                padding: 0;
+                width: 150px;
+                font-size: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: darkblue;
+                color: #fff;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <script type="text/javascript">var submitted=false;</script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){
+            window.location='https://twitter.com';}"></iframe>
+        <div class="container">
+            <div class="box">
+                <h1>Contact form</h1>
+              
+                <form action="" target="hidden_iframe" onsubmit="submitted=true" method="POST">
+                    <input type="text" placeholder="Name" name=""><br>
+                    <input type="email" placeholder="Email address" name=""><br>
+                    <input type="text" placeholder="Message" name=""><br>
+                    <input type="submit" value="Submit"><br>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
